@@ -1,0 +1,95 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #e8edf7;
+  background: #111827;
+}
+
+body {
+  width: 380px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 22px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 23px;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+p,
+li {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input {
+  border: 1px solid #64748b;
+  color: #f8fafc;
+  background: #1e293b;
+}
+
+button {
+  border: 0;
+  color: #fff;
+  background: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+section {
+  padding: 14px;
+  border: 1px solid #64748b;
+  border-radius: 10px;
+  background: #1e293b;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li + li {
+  margin-top: 10px;
+}
+
+.note {
+  color: #cbd5e1;
+  font-size: 12px;
+}
