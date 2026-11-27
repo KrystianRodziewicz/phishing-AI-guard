@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Oficjalna domena",
+    "url": "https://demobank.example",
+    "status": "no_signals_found",
+    "hostname": "demobank.example",
+    "codes": []
+  },
+  {
+    "name": "Oficjalna subdomena",
+    "url": "https://login.demobank.example",
+    "status": "no_signals_found",
+    "hostname": "login.demobank.example",
+    "codes": []
+  },
+  {
+    "name": "Marka w obcej domenie",
+    "url": "https://demobank.example.other.example",
+    "status": "signals_found",
+    "hostname": "demobank.example.other.example",
+    "codes": ["brand_name_outside_official_domain"]
+  },
+  {
+    "name": "Myslnik nie tworzy oficjalnej subdomeny",
+    "url": "https://login-demobank.example",
+    "status": "signals_found",
+    "hostname": "login-demobank.example",
+    "codes": ["brand_name_outside_official_domain"]
+  },
+  {
+    "name": "Marka tylko w sciezce",
+    "url": "https://other.example/demobank",
+    "status": "no_signals_found",
+    "hostname": "other.example",
+    "codes": []
+  },
+  {
+    "name": "Zamienione sasiednie litery",
+    "url": "https://demobnak.example",
+    "status": "signals_found",
+    "hostname": "demobnak.example",
+    "codes": ["brand_typo_candidate"]
+  },
+  {
+    "name": "Brak jednej litery",
+    "url": "https://demobnk.example",
+    "status": "signals_found",
+    "hostname": "demobnk.example",
+    "codes": ["brand_typo_candidate"]
+  },
+  {
+    "name": "Dodatkowa litera",
+    "url": "https://demobbank.example",
+    "status": "signals_found",
+    "hostname": "demobbank.example",
+    "codes": ["brand_typo_candidate"]
+  },
+  {
+    "name": "Podmieniona litera",
+    "url": "https://demobonk.example",
+    "status": "signals_found",
+    "hostname": "demobonk.example",
+    "codes": ["brand_typo_candidate"]
+  },
+  {
+    "name": "Zwykly sklep",
+    "url": "https://bookshop.example",
+    "status": "no_signals_found",
+    "hostname": "bookshop.example",
+    "codes": []
+  },
+  {
+    "name": "HTTP",
+    "url": "http://example.com",
+    "status": "signals_found",
+    "hostname": "example.com",
+    "codes": ["http_address"]
+  },
+  {
+    "name": "IP i HTTP jednoczesnie",
+    "url": "http://127.0.0.1/login",
+    "status": "signals_found",
+    "hostname": "127.0.0.1",
+    "codes": ["ip_address_host", "http_address"]
+  },
+  {
+    "name": "Wlasciwy host po znaku @",
+    "url": "https://bank.example@demo.example/login",
+    "status": "signals_found",
+    "hostname": "demo.example",
+    "codes": ["userinfo_in_url"]
+  },
+  {
+    "name": "Wielkie litery i koncowa kropka",
+    "url": "https://DEMOBANK.EXAMPLE.",
+    "status": "no_signals_found",
+    "hostname": "demobank.example",
+    "codes": []
+  },
+  {
+    "name": "Dwie kropki w domenie",
+    "url": "https://example..com",
+    "status": "invalid_input",
+    "hostname": null,
+    "codes": []
+  },
+  {
+    "name": "Nieobslugiwany protokol",
+    "url": "ftp://example.com",
+    "status": "invalid_input",
+    "hostname": null,
+    "codes": []
+  }
+]
