@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.pcap
+*.pcapng
+*.log
