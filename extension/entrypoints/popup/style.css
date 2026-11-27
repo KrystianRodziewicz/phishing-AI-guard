@@ -68,6 +68,24 @@ button:hover {
   background: #1e40af;
 }
 
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+#check-tab {
+  margin-top: 12px;
+}
+
+button.secondary {
+  border: 1px solid #64748b;
+  background: transparent;
+}
+
+button.secondary:hover {
+  background: #1e293b;
+}
+
 input:focus-visible,
 button:focus-visible {
   outline: 3px solid #93c5fd;
